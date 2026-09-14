@@ -1,0 +1,229 @@
+/* teacher specific styles (dashboards, forms, tables, buttons) */
+
+/* page layout & utilities */
+.page-container {
+    max-width: 100%;
+    width: 95%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    animation: fadeIn 0.6s ease;
+}
+.page-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* card grid for dashboards */
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card {
+    flex: 1 1 200px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.card .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.card .label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.table th {
+    background-color: #f4f4f4;
+}
+.table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 14px;
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+/* small button variant */
+.btn-sm {
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* form cards */
+.form-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* utility spacing */
+.mt-20 { margin-top:20px; }
+.mb-20 { margin-bottom:20px; }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .page-container {
+        width: 98%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 auto;
+        min-width: 250px;
+    }
+
+    .form-card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-form input[type="text"],
+    .filter-form select,
+    .filter-form button {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .table {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
+        max-width: 100%;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-container { width: 96%; margin: 25px auto; padding: 16px; }
+    .page-title { font-size: 26px; }
+    .dashboard-cards { gap: 16px; }
+    .card { min-width: 220px; padding: 18px; }
+    .form-card { max-width: 520px; padding: 16px; }
+    .table th, .table td { padding: 10px 12px; font-size: 15px; }
+    .filter-form input[type="text"], .filter-form select, .filter-form button { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card .icon {
+        font-size: 28px;
+    }
+
+    .card .label {
+        font-size: 16px;
+    }
+}

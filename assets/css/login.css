@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* FORM STYLING */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+    background-color: #fdf5e6; /* Soft cream background for page body */
+}
+
+.form-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(117, 23, 12, 0.15);
+    border: 1px solid #FFE3BE;
+    transform: translateY(8px);
+    opacity: 0;
+    animation: cardPop 420ms cubic-bezier(.2,.9,.2,1) forwards 120ms;
+}
+
+.form-card h2 {
+    color: #75170C;
+    font-family: 'Poppins-Bold';
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    font-family: 'Poppins-Medium';
+    color: #75170C;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #FFE3BE;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #75170C;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #75170C;
+    color: #FFE3BE;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.form-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: #75170C;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Inline form error shown above the form */
+.form-error {
+    background: #fff4f4;
+    color: #8b1d18;
+    border: 1px solid #f5c2c2;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@keyframes cardPop {
+    from { transform: translateY(8px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .form-wrapper { padding: 30px 16px; }
+    .form-card { max-width: 420px; padding: 32px; }
+    .form-card h2 { font-size: 24px; }
+    .input-box label { font-size: 13px; }
+    .input-box input { font-size: 14px; padding: 10px 12px; }
+    .submit-btn { font-size: 15px; padding: 13px; }
+}
+
+@media (max-width: 768px) {
+    .form-wrapper { min-height: 70vh; padding: 24px 12px; }
+    .form-card { width: 100%; max-width: 100%; padding: 28px; }
+    .form-card h2 { font-size: 22px; }
+}
+
