@@ -1,0 +1,67 @@
+TITLE: Particle Physics- Fundamental particles
+
+OBJECTIVES
+Physics As level syllabus section 11.2 objectives 3-6:
+recall that protons and neutrons are not fundamental particles and describe protons and neutrons in 
+terms of their quark composition
+ understand that a hadron may be either a baryon (consisting of three quarks) or a meson (consisting of 
+one quark and one antiquark)
+describe the changes to quark composition that take place during β– and β+ decay 
+recall that electrons and neutrinos are fundamental particles called leptons
+
+SLIDE 1: Quark composition
+-Hadrons are not fundamental particles, as they are a group of subatomic particles made up of smaller particles called quarks.
+-Typed of Hadrons:
+Baryons
+Mesons
+
+-Mesons: Made up of a quark and anti-quark pair (2 quarks)
+
+SLIDE 2: Quark composition Baryons
+-Baryons are made from 3 quarks Eg: proton, neutron, antiproton, antineutron
+
+-Protons(UUD): are made up of two up quarks and a down quark
+Total charge: 2/3e + 2/3e -1/3e = +e
+-AntiProton: Made from (Anti-Up, Anti-Up, Anti-Down quarks)which the same quarks but with opposite charges
+Total charge: -2/3e -2/3e +1/3e = -e
+
+Neutrons(UDD): are made up of two down quarks and an up quark
+Total charge: 2/3e -1/3e -1/3e = 0
+-AntiProton: Made from (Anti-Up, Anti-Down, Anti-Down quarks)which the same quarks but with opposite charges
+Total charge: -2/3e +1/3e +1/3e = 0
+
+SLIDE 3:The Quark Model of Beta Decay(β- decay)
+-Beta decay happens via the weak interaction
+-β- decay is when a neutron turns into a proton emitting an electron and anti-electron neutrino
+-specifically, a neutron turns into a proton because a down quark turns into an up quark
+[IMAGE WOULD COME]
+
+SLIDE 4:The Quark Model of Beta Decay(β+ decay)
+-β+ decay is when a proton turns into a neutron emitting an positron and an electron neutrino
+-specifically, a proton turns into a neutron because an up quark turns into a down quark
+[IMAGE WOULD COME]
+
+SLIDE 5:Fundamental particles-Leptons
+-Leptons are also a group of fundamental particles
+-This means they are not made up of any other particles (not made of any quarks)
+
+There are six leptons altogether:
+electron
+electron neutrino
+muon
+muon neutrino
+tau
+tau neutrino
+[Image]
+
+SLIDE 6:Leptons continuation
+-The muon and tau particle are very similar to the electron but with slightly larger mass
+-Electrons, muon and tau particles all have a charge of -1e 
+
+-There are three flavours (types) of neutrinos (electron, muon, tau)
+Neutrinos are the most abundant leptons in the universe
+They have no charge and negligible mass (almost 0)
+
+-Leptons interact with the weak interaction, electromagnetic and gravitational forces but not strong force. However quarks do.
+
+

@@ -1,0 +1,8 @@
+IT QUESTIONS:
+
+Explain why the following techniques could be needed when making videos:
+
+a- trimming a video clip
+b- adding subtitles to a video
+c- adding sound to a video
+
